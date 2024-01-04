@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+@import url('https://kit-pro.fontawesome.com/releases/v6.5.1/css/pro.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar.router-link-exact-active {
+    @apply bg-[#21b9ee]/10 text-[#08364a] font-semibold shadow shadow-[#08364a]/10
+}
+
+
+.profileMenu .v-overlay__content {
+    @apply shadow-xl
+}
+
+
+
+@layer base {
+    body::-webkit-scrollbar {
+        @apply hidden font-Nunito
+    }
+
+
+    .chatSidebar::-webkit-scrollbar {
+        @apply hidden
+    }
+
+    /* .chatSidebar::-webkit-scrollbar-thumb {
+        @apply bg-gray-100
+    } */
+
+    .inner-aside::-webkit-scrollbar {
+        @apply hidden
+    }
+
+}
+
+.v-application__wrap {
+    @apply bg-[#f8f8f9]
+}
